@@ -114,9 +114,4 @@ class PartyController extends GetxController {
     update();
   }
 
-  @override
-  void onReady() async {
-    super.onReady();
-    await onReadParty();
-  }
 }

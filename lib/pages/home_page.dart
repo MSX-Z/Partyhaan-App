@@ -12,9 +12,21 @@ import 'package:partyhaan_app/pages/party_page.dart';
 import 'package:partyhaan_app/services/cloud_firestore.dart';
 import 'package:partyhaan_app/services/firebase_storage.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
-  final PartyController controller = Get.put(PartyController());
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final PartyController controller = Get.find();
+
+  @override
+  void initState() {
+    super.initState();
+    controller.onReadParty();
+  }
 
   @override
   Widget build(BuildContext context) {

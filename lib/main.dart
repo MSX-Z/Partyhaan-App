@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:partyhaan_app/Themes/theme.dart';
 import 'package:partyhaan_app/controllers/auth_controller.dart';
+import 'package:partyhaan_app/controllers/party_controller.dart';
 import 'package:partyhaan_app/pages/home_page.dart';
 import 'package:partyhaan_app/pages/login_page.dart';
 import 'package:partyhaan_app/pages/register_page.dart';
@@ -14,7 +15,10 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  ).then((value) => Get.put(AuthController()));
+  ).then((value) {
+    Get.put(AuthController());
+    Get.put(PartyController());
+  });
 
   runApp(const MyApp());
 }
