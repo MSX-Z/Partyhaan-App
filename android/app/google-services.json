@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "150244663945",
+    "project_id": "party-haan-b0ae0",
+    "storage_bucket": "party-haan-b0ae0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150244663945:android:6ea8b4b902df216e74dc58",
+        "android_client_info": {
+          "package_name": "com.example.partyhaan_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150244663945-lakb1hqubmdicabg4kqf14uv21ploh1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeONf2tRgJAJZE1FAtSBtOn0JTQ9_Nmzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150244663945-lakb1hqubmdicabg4kqf14uv21ploh1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
